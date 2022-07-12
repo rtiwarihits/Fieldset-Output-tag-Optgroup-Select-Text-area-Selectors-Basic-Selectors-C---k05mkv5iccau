@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -7,3 +8,115 @@
 }
 
 /* Write CSS code below */
+.main-content {
+            width: 90%;
+            min-height: 1000px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-rows: 20% 80%;
+            grid-template-columns: 300px 700px;
+        }
+        .left-section {
+            grid-area: 1/1/3/2;
+            grid-column: span 1;
+            background-color: #5a5a5a;
+        }
+        .right-section {
+/*             grid-area: 1/1/3/2; */
+            grid-column: span 1 / span 2;
+            background-color: #5a5a5a;
+        }
+        .left-content {
+            padding: 1rem;
+            color: #fff;
+        }
+        img.profile-image {
+            display: block;
+            margin: auto;
+            border: 5px solid white;
+            border-radius: 30%;
+            width: 60%;
+        }
+        .name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            padding: 0.8rem;
+        }
+        .designation {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+        }
+        .description {
+            font-size: 0.75rem;
+            text-align: center;
+            padding: 1rem;
+        }
+        .social-media {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            padding: 5px;
+        }
+        .social-media li {
+            list-style-type: none;
+        }
+        .social-media li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .social-media li i {
+            color: rgb(104, 176, 218);
+        }
+        .personal-details {
+            padding: 5px;
+        }
+        .personal-details li {
+            padding: 5px 2px;
+            list-style-type: none;
+        }
+        .personal-details li i {
+            color: rgb(104, 176, 218);
+        }
+        .skills {
+            text-align: center;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .skill-item {
+            padding: 10px;
+        }
+        .skill-name {
+            font-size: 0.65rem;
+            text-align: left;
+            padding-bottom: 0.5rem;
+        }
+        .progress-bar {
+            border: 1px solid white;
+            height: 2px;
+            background-color: #fff;
+        }
+        .right-main-content {
+            padding: 2rem 3rem;
+        }
+        .right-title {
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .para {
+            padding-left: 0.5rem;
+        }
+        @media screen and (max-width: 673px) {
+                .main-content {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
